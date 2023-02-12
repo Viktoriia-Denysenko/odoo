@@ -16,6 +16,7 @@
         
         'views/menu.xml',
         'views/doctor.xml',
+        'views/patient.xml',
     ],
     'demo': [],
     

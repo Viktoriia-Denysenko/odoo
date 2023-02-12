@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"/>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 <menuitem
   id="hr_hos_main_menu"
@@ -14,8 +14,8 @@
   <menuitem
   id="hr_hos_settings_main_menu"
   parent="hr_hos_main_menu"
-  groups="group_hr_hos_manager.group_hr_hos_admin"
+  groups="group_hr_hos_manager,group_hr_hos_admin"
   name="Settings"
-  sequence="9998"/>
+  sequence="9999"/>
 
 </odoo>
