@@ -1,14 +1,13 @@
 from odoo import models, fields
 
 
-class Doctor(models.Model):
+class Visit(models.Model):
 
-    _name = "hr.hospital.doctor"
-    _description = "Doctor"
+    _name = "hr.hospital.visit"
+    _description = "Visit"
 
     name = fields.Char()
 
     active = fields.Boolean(
         default=True,
     )
-    isbn = fields.Char()

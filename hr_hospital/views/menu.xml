@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 <menuitem
-  id="hr_hos_main_menu"
+  id="hr_hospital_main_menu"
   name="Hospital"
+  web_icon="static/description/partner_customer.png"
   sequence="300"/>
 
   <menuitem
-  id="hr_hos_catalog_menu"
-  parent="hr_hos_main_menu"
+  id="hr_hospital_catalog_menu"
+  parent="hr_hospital_main_menu"
   name="Catalog"
   sequence="100"/>
 
   <menuitem
-  id="hr_hos_settings_main_menu"
-  parent="hr_hos_main_menu"
-  groups="group_hr_hos_manager,group_hr_hos_admin"
+  id="hr_hospital_settings_main_menu"
+  parent="hr_hospital_main_menu"
   name="Settings"
   sequence="9999"/>
 
