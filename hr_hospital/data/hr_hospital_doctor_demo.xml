@@ -3,15 +3,12 @@
 
     <record id="hr_hospital_doctor_oncologist" model="hr.hospital.doctor">
         <field name="name">Oncologist</field>
-        <field name="isbn">1</field>
     </record>
     <record id="hr_hospital_doctor_pediatrician" model="hr.hospital.doctor">
         <field name="name">Pediatrician</field>
-        <field name="isbn">2</field>
     </record>
     <record id="hr_hospital_doctor_cardiologist" model="hr.hospital.doctor">
         <field name="name">Cardiologist</field>
-        <field name="isbn">3</field>
     </record>
     
 </odoo>
