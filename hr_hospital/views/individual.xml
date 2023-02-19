@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_hospital_individual_mixin_tree" model="ir.ui.view">
+        <field name="name">hr.hospital.individual.mixin.tree ()</field>
+        <field name="model">hr.hospital.individual.mixin</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="full_name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_hospital_individual_mixin_form" model="ir.ui.view">
+        <field name="name">hr.hospital.individual.mixin.form ()</field>
+        <field name="model">hr.hospital.individual.mixin</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="full_name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_hospital_individual_mixin_act_window" model="ir.actions.act_window">
+        <field name="name">Individual</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.hospital.individual.mixin</field>
+        <field name="view_mode">tree,form</field>   
+    </record>
+
+</odoo>

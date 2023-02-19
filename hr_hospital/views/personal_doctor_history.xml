@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="hr_hospital_personal_doctor_history_tree" model="ir.ui.view">
+    <field name="name">hr.hospital.personal.doctor.history.tree ()</field>
+    <field name="model">hr.hospital.personal.doctor.history</field>
+    <field name="arch" type="xml">
+        <tree>
+             <field name="patient_id" widget="many2one_tags"/>
+             <field name="doctor_id" widget="many2one_tags"/>
+             <field name="visit_date"/>
+        </tree>
+    </field>
+</record>
+
+<record id="hr_hospital_personal_doctor_history_form" model="ir.ui.view">
+    <field name="name">hr.hospital.personal.doctor.history.form ()</field>
+    <field name="model">hr.hospital.personal.doctor.history</field>
+    <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <group>
+                    <field name="patient_id" widget="many2one_tags"/>
+                    <field name="doctor_id" widget="many2one_tags"/>
+                    <field name="visit_date"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>    
+
+<record id="hr_hospital_personal_doctor_history_act_window" model="ir.actions.act_window">
+    <field name="name">Personal doctor history</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">hr.hospital.personal.doctor.history</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+</odoo>

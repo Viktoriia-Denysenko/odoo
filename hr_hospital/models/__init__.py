@@ -2,3 +2,8 @@ from . import doctor
 from . import patient
 from . import disease
 from . import visit
+from . import individual
+from . import diagnosis
+from . import personal_doctor_history
+from . import research
+from . import doctor_schedule
