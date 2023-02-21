@@ -1,4 +1,5 @@
-from odoo import models, fields
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 class Diagnosis(models.Model):
     _name = "hr.hospital.diagnosis"
@@ -23,4 +24,12 @@ class Diagnosis(models.Model):
       
     diagnosis_date = fields.Datetime(default=fields.Date.today,
                                      required=True) 
+    
+    comment = fields.Text()
+    
+    @api.constrains('doctor_id')
+    def _check_intern(self):
+         if self.doctor_id.intern and not self.comment:
+            raise ValidationError("Doctor's comment is needed!")
+    
     

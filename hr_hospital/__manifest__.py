@@ -8,6 +8,7 @@
     'category': 'Extra Tools',
     'depends': [
         'base',
+        'contacts',
     ],
 
     'data': [
@@ -19,10 +20,10 @@
         'views/disease.xml',
         'views/visit.xml',
         'views/diagnosis.xml',
-        'views/individual.xml',
         'views/personal_doctor_history.xml',
         'views/research.xml',
         'views/doctor_schedule.xml',
+        'wizard/doctor_change_wizard_views.xml',
     ],
 
     'demo': [
