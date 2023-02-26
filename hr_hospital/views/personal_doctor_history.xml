@@ -5,10 +5,9 @@
     <field name="model">hr.hospital.personal.doctor.history</field>
     <field name="arch" type="xml">
         <tree>
-             <field name="name"/>
              <field name="patient_id" widget="many2one_tags"/>
              <field name="doctor_id" widget="many2one_tags"/>
-             <field name="visit_date"/>
+             <field name="appointment_datetime"/>
         </tree>
     </field>
 </record>
@@ -20,10 +19,9 @@
         <form>
             <sheet>
                 <group>
-                    <field name="name"/>
                     <field name="patient_id" widget="many2one_tags"/>
                     <field name="doctor_id" widget="many2one_tags"/>
-                    <field name="visit_date"/>
+                    <field name="appointment_datetime"/>
                 </group>
             </sheet>
         </form>
@@ -36,5 +34,12 @@
     <field name="res_model">hr.hospital.personal.doctor.history</field>
     <field name="view_mode">tree,form</field>
 </record>
+
+<menuitem
+    id="hr_hospital_personal_doctor_history_menu"
+    action="hr_hospital_personal_doctor_history_act_window"
+    parent="hr_hospital_catalog_menu"
+    name="Personal doctor history"
+    sequence="900"/>
 
 </odoo>

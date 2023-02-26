@@ -4,7 +4,7 @@ class IndividualMixin(models.AbstractModel):
      _name = 'hr.hospital.individual.mixin'
      _description = 'Individual Mixin'
      
-     name = fields.Char()
+     name = fields.Char(string='Full name')
      phone = fields.Char()
      email = fields.Char()
      foto = fields.Image("Image", max_width=1920, max_height=192)

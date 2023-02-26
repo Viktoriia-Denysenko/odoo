@@ -13,11 +13,11 @@
 
     'data': [
         'security/ir.model.access.csv',
-        'data/hr_hospital_disease_data.xml',
         'views/menu.xml',
         'views/doctor.xml',
         'views/patient.xml',
         'views/disease.xml',
+        'views/disease_category.xml',
         'views/visit.xml',
         'views/diagnosis.xml',
         'views/personal_doctor_history.xml',
@@ -27,8 +27,8 @@
     ],
 
     'demo': [
-        'data/hr_hospital_doctor_demo.xml',
-        'data/hr_hospital_patient_demo.xml',
+        'data/hr_hospital_disease_category_demo.xml',
+        'data/hr_hospital_disease_demo.xml',
     ],
 
     'application': False,

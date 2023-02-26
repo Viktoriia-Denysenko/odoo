@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_hospital_disease_cold" model="hr.hospital.disease">
+            <field name="name">Common cold</field>
+            <field name="category_id" eval="ref('hr_hospital.hr_hospital_disease_category_viruses')"/>
+        </record>
+        <record id="hr_hospital_disease_flu" model="hr.hospital.disease">
+            <field name="name">Flu</field>
+            <field name="category_id" eval="ref('hr_hospital.hr_hospital_disease_category_viruses')"/>
+        </record>
+        <record id="hr_hospital_disease_salmonella" model="hr.hospital.disease">
+            <field name="name">Salmonella</field>
+            <field name="category_id" eval="ref('hr_hospital.hr_hospital_disease_category_bacteria')"/>
+        </record>
+        <record id="hr_hospital_disease_fungal_nail_infection" model="hr.hospital.disease">
+            <field name="name">Fungal nail infection</field>
+            <field name="category_id" eval="ref('hr_hospital_disease_category_fungi')"/>
+        </record>
+        <record id="hr_hospital_disease_hookworms" model="hr.hospital.disease">
+            <field name="name">Hookworms</field>
+            <field name="category_id" eval="ref('hr_hospital_disease_category_parasites')"/>
+        </record>
+    </data>
+</odoo>

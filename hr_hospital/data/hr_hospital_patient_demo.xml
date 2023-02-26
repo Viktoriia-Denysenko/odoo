@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
     <record id="hr_hospital_patient_ivanov" model="hr.hospital.patient">
         <field name="name">Ivanov</field>

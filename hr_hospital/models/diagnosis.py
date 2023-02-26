@@ -5,6 +5,7 @@ class Diagnosis(models.Model):
     _name = "hr.hospital.diagnosis"
     _description = "Diagnosis"
     
+    name = fields.Char(string="Diagnosis")
     doctor_id = fields.Many2one(
         comodel_name="hr.hospital.doctor", )
     
@@ -12,7 +13,7 @@ class Diagnosis(models.Model):
         comodel_name="hr.hospital.patient", ) 
     
     disease_id = fields.Many2one(
-        comodel_name="hr.hospital.disease", )   
+        comodel_name="hr.hospital.disease.category", )   
     
     treatment = fields.Char()
     
